@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YcbS57wtbFe4S7azpVA8nr46VjLlzFklChZJB2vZMjoEzPl7uh6IxdKyoxmdCKgET9i9utSjD89BGQvFS+loHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vutha\\source\\repos\\QLTD\\QLTD\\QLTD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vutha\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\vutha\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\vutha\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
