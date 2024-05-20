@@ -7,6 +7,9 @@
     <Compile Update="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="InfoCustormer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SignUpAccount.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -35,5 +35,17 @@ namespace QLTD
             su.Show();
             this.Hide();
         }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+           InfoCustormer info = new InfoCustormer();
+           info.Show();
+            this.Hide();
+        }
     }
 }

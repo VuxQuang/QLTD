@@ -43,6 +43,8 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnDangKi = new Guna.UI2.WinForms.Guna2Button();
             btnNopTien = new Guna.UI2.WinForms.Guna2Button();
             btnThongKe = new Guna.UI2.WinForms.Guna2Button();
@@ -50,6 +52,7 @@
             btnExit = new Guna.UI2.WinForms.Guna2Button();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
+            btnInfo = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -79,7 +82,7 @@
             btnNopTien.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnNopTien.Font = new Font("Segoe UI", 9F);
             btnNopTien.ForeColor = Color.White;
-            btnNopTien.Location = new Point(241, 24);
+            btnNopTien.Location = new Point(409, 24);
             btnNopTien.Name = "btnNopTien";
             btnNopTien.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnNopTien.Size = new Size(180, 45);
@@ -95,12 +98,13 @@
             btnThongKe.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnThongKe.Font = new Font("Segoe UI", 9F);
             btnThongKe.ForeColor = Color.White;
-            btnThongKe.Location = new Point(486, 24);
+            btnThongKe.Location = new Point(610, 24);
             btnThongKe.Name = "btnThongKe";
             btnThongKe.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnThongKe.Size = new Size(180, 45);
             btnThongKe.TabIndex = 2;
             btnThongKe.Text = "Thống kê";
+            btnThongKe.Click += btnThongKe_Click;
             // 
             // btnLogout
             // 
@@ -113,10 +117,10 @@
             btnLogout.Font = new Font("Segoe UI", 9F);
             btnLogout.ForeColor = Color.White;
             btnLogout.Image = (Image)resources.GetObject("btnLogout.Image");
-            btnLogout.Location = new Point(672, 24);
+            btnLogout.Location = new Point(807, 24);
             btnLogout.Name = "btnLogout";
             btnLogout.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnLogout.Size = new Size(180, 45);
+            btnLogout.Size = new Size(89, 45);
             btnLogout.TabIndex = 3;
             btnLogout.Text = "Đăng xuất";
             btnLogout.Click += btnLogout_Click;
@@ -132,7 +136,7 @@
             btnExit.Font = new Font("Segoe UI", 9F);
             btnExit.ForeColor = Color.White;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
-            btnExit.Location = new Point(867, 12);
+            btnExit.Location = new Point(876, 1);
             btnExit.Name = "btnExit";
             btnExit.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnExit.Size = new Size(63, 45);
@@ -189,12 +193,30 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
+            // btnInfo
+            // 
+            btnInfo.CustomizableEdges = customizableEdges11;
+            btnInfo.DisabledState.BorderColor = Color.DarkGray;
+            btnInfo.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnInfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnInfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnInfo.Font = new Font("Segoe UI", 9F);
+            btnInfo.ForeColor = Color.White;
+            btnInfo.Location = new Point(207, 24);
+            btnInfo.Name = "btnInfo";
+            btnInfo.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnInfo.Size = new Size(180, 45);
+            btnInfo.TabIndex = 6;
+            btnInfo.Text = "Thông tin";
+            btnInfo.Click += btnInfo_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkGray;
             ClientSize = new Size(942, 518);
+            Controls.Add(btnInfo);
             Controls.Add(guna2DataGridView1);
             Controls.Add(btnExit);
             Controls.Add(btnLogout);
@@ -217,5 +239,6 @@
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2Button btnInfo;
     }
 }

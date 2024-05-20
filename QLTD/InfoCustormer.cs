@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QLTD
 {
-    public partial class SignUp : Form
+    public partial class InfoCustormer : Form
     {
-        public SignUp()
+        public InfoCustormer()
         {
             InitializeComponent();
-        }
-
-        private void SignUp_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
