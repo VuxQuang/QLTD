@@ -45,7 +45,7 @@ namespace QLTD
         {
            InfoCustormer info = new InfoCustormer();
            info.Show();
-            this.Hide();
+           this.Hide();
         }
     }
 }

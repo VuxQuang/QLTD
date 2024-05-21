@@ -136,10 +136,10 @@
             btnExit.Font = new Font("Segoe UI", 9F);
             btnExit.ForeColor = Color.White;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
-            btnExit.Location = new Point(876, 1);
+            btnExit.Location = new Point(894, 1);
             btnExit.Name = "btnExit";
             btnExit.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnExit.Size = new Size(63, 45);
+            btnExit.Size = new Size(45, 36);
             btnExit.TabIndex = 4;
             btnExit.Click += btnExit_Click;
             // 
